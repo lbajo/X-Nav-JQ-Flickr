@@ -7,4 +7,4 @@ Escribe un programa que, usando la API de Flickr, y en particular el documento J
 
 Mejora tu programa para que admita que el usuario escriba en una caja la eitqueta, o lista de etiquetas que quiera, y el programa muestre las últimas fotos con esas etiquetas.
 
-[Try me](https://lbajo.github.io/X-Nav-JQ-Flickr/)
+[Try me](https://lbajo.github.io/X-Nav-JQ-Flickr/index.html)
