@@ -2,7 +2,7 @@ $(document).ready(function() {
     $("#search").click(function(){
     	var value = $("#text").val();
     	var page="http://api.flickr.com/services/feeds/photos_public.gne?tags="+value+"&tagmode=any&format=json&jsoncallback=?"
-    	$.getJSON(page{
+    	$.getJSON(page, {
 			tagmode: "any",
 			format: "json"
 		})
