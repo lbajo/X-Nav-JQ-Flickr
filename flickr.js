@@ -5,8 +5,7 @@ $(document).ready(function() {
     	$.getJSON( "http://api.flickr.com/services/feeds/photos_public.gne?tags="+value+"&tagmode=any&format=json&jsoncallback=?", {
       		tagmode: "any",
       		format: "json"
-		})
-    	 .done(function(data) {
+		}).done(function(data) {
         	$.each(data.items, function(i,item) {
           		$("<img>").attr("src", item.media.m).appendTo("#images");
         	});
