@@ -1,5 +1,6 @@
 $(document).ready(function() {
     $("#search").click(function(){
+	$("#images").empty();
     	var value = $("#text").val();
     	var flickerAPI="https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
     	$.getJSON( flickerAPI, {
@@ -13,6 +14,7 @@ $(document).ready(function() {
 		});
     });
     $("#searchF").click(function(){
+	$("#images").empty();	
     	var flickerAPI="https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
     	$.getJSON( flickerAPI, {
     		tags: "fuenlabrada",
