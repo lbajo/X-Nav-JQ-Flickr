@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $("#search").click(function(){
     	var value = $("#text").val();
-    	var flickerAPI="http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+    	var flickerAPI="https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
     	$.getJSON( flickerAPI, {
     		tags: value,
     		tagmode: "any",
@@ -13,7 +13,7 @@ $(document).ready(function() {
 		});
     });
     $("#searchF").click(function(){
-    	var flickerAPI="http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+    	var flickerAPI="https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
     	$.getJSON( flickerAPI, {
     		tags: "fuenlabrada",
     		tagmode: "any",
